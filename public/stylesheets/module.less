@@ -1,0 +1,24 @@
+// animation方法兼容
+.animation(@attr) {
+  animation: @attr;
+  -webkit-animation: @attr;
+}
+
+// keyframes 方法兼容
+.keyframes(@name, @frames){
+  @-webkit-keyframes @name {
+    @frames();
+  }
+  @-moz-keyframes @name {
+    @frames();
+  }
+  @-ms-keyframes @name {
+    @frames();
+  }
+  @-o-keyframes @name {
+    @frames();
+  }
+  @keyframes @name {
+    @frames();
+  }
+}
