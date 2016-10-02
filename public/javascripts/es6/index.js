@@ -14,7 +14,7 @@ var $ = (_ele) => {
 var loadingAnimation = () => {
     var _ele = $('#J_loading');
     setTimeout(function(){
-
+        _els.cssText = '';
     },500);
     console.log(_ele);
 };
