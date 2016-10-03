@@ -11,6 +11,8 @@ var $ = (_ele) => {
         return document.querySelector(_ele);
     }
 };
+
+// loding icon 动画效果
 var loadingAnimation = () => {
     var _ele = $('#J_loading');
     setTimeout(function(){
