@@ -14,11 +14,16 @@ var $ = (_ele) => {
 
 // loding icon 动画效果
 var loadingAnimation = () => {
-    var _ele = $('#J_loading');
+    let ele = $('#J_loading');
+    let rotate = 90;
     setTimeout(function(){
-        _els.cssText = '';
+        ele.cssText = `transform: rotate(${_rotate}deg)`;
+        rotate += 90;
+        if (rotate === 360) {
+            rotate = 90;
+        }
     },500);
-    console.log(_ele);
+    console.log(ele);
 };
 
 // init
